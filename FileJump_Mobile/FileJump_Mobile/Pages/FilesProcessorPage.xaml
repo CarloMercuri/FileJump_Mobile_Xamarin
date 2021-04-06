@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FileJump_Mobile.Pages.FilesProcessorPage"
+             BackgroundColor="#5c5c5c">
+
+
+
+    <StackLayout Margin="5, 15, 5, 5">
+
+        <Label x:Name="label_AviableDevices"
+               Margin="0, 30, 0, 0"
+               HorizontalOptions="Center"
+               FontSize="16"
+               FontAttributes="Bold"
+               FontFamily="Arial"
+               Text="Who do you want to send the file(s) to?"
+               TextColor="White"
+               >
+
+        </Label>
+
+        <Frame BorderColor="Wheat" HeightRequest="100" Margin="0, 30, 0, 5" BackgroundColor="#afafaf">
+            <StackLayout x:Name="DevicesStackLayout"
+                         Margin="0, 0, 0, 0"
+                         Padding="0, 0,0 ,0"
+                Orientation="Horizontal">
+
+
+                
+                <StackLayout >
+
+                    <Button x:Name="btn_Device"
+                    BackgroundColor="Red"
+                            VerticalOptions="Start"
+                    ImageSource="icon_desktop_resized"/>
+
+                    <Label x:Name="lbl"
+                           HorizontalOptions="Center"
+                           Text="DEV_TEST">
+
+                    </Label>    
+                </StackLayout>
+
+                <StackLayout >
+
+                    <Button x:Name="btn_Device2"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    BackgroundColor="Transparent"
+                    ImageSource="icon_desktop_resized"/>
+
+                    <Label x:Name="lbl2"
+                           HorizontalOptions="Center"
+                           Text="DEV_TEST2">
+
+                    </Label>
+                </StackLayout>
+                
+
+            </StackLayout>
+        </Frame>
+
+
+
+        <Button x:Name="btn_RefreshDevices"
+                Text="REFRESH"
+                HeightRequest="80"
+                Clicked="btn_RefreshDevices_Click">
+
+        </Button>
+
+
+    </StackLayout>
+</ContentPage>
