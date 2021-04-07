@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using FileJump_Mobile.Pages;
 
 namespace FileJump_Mobile
 {
@@ -21,54 +22,25 @@ namespace FileJump_Mobile
             // Initialize the network listener
             NetComm.InitializeNetwork();
 
-            // Subscribe to events
-            DataProcessor.NetworkDiscoveryEvent += NetworkDiscoveryReceived;
-
-            NetComm.ScoutNetworkDevices();
-
+            PickPhotosButton.Clicked += btn_PickPhoto_Clicked;
         }
 
-        private void NetworkDiscoveryReceived(object sender, NetworkDiscoveryEventArgs e)
-        {
-            Console.WriteLine("received device");
-            AddNetworkDevice(e.device);
-        }
 
-        private void AddNetworkDevice(NetworkDevice device)
-        {
-            StackLayout stack = new StackLayout()
-            {
-                
-            };
+        
 
-            Grid.SetRow(stack, 0);
-            Grid.SetColumn(stack, 0);
-
-            Button btn_Device = new Button()
-            {
-                BackgroundColor = Color.Transparent,
-                ImageSource = "icon_desktop_resized"
-            };
-
-            btn_Device.Clicked += Btn_Device_Clicked;
-
-            Label lbl = new Label()
-            {
-                HorizontalOptions = LayoutOptions.Center,
-                Text = device.Name
-            };
-
-            stack.Children.Add(btn_Device);
-            stack.Children.Add(lbl);
-
-            DevicesGrid.Children.Add(stack);
-
-            
-        }
-
-        private void Btn_Device_Clicked(object sender, EventArgs e)
+        private void btn_PickPhoto_Clicked(object sender, EventArgs e)
         {
             PickPhotos();
+            /*
+            List<FileResult> fakePaths = new List<FileResult>();
+
+            fakePaths.Add(new FileResult("C:/dev/test/1.png"));
+            fakePaths.Add(new FileResult("C:/dev/test/2.png"));
+            fakePaths.Add(new FileResult("C:/dev/test/3.png"));
+            fakePaths.Add(new FileResult("C:/dev/test/4.png"));
+            Application.Current.MainPage = new FilesProcessorPage(fakePaths);
+            */
+
         }
 
         private async void PickPhotos()
@@ -80,25 +52,15 @@ namespace FileJump_Mobile
                 return;
             }
 
-            var images = new List<ImageSource>();
+            List<FileResult> res = new List<FileResult>();
 
-            foreach(var item in results)
+            foreach(FileResult f in results)
             {
-                Console.WriteLine(item.FileName);
+                res.Add(f);
             }
 
-
-            
-        }
-
-        public void button_DeviceName_OnClick(object sender, EventArgs args)
-        {
-            Console.WriteLine("click");
-        }
-
-        public void btn_RefreshDevices_Click(object sender, EventArgs args)
-        {
-
+            Application.Current.MainPage = new FilesProcessorPage(res);
+ 
         }
 
     }

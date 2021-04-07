@@ -5,117 +5,16 @@
              BackgroundColor="#5c5c5c">
 
 
-
+    <Button x:Name="PickPhotosButton"
+            Margin="50, 150, 50, 150"
+            HeightRequest="50"
+            WidthRequest="50"
+            BorderWidth="5"
+            BorderColor="#fafafa"
+            Text="Pick Photos">
+        
+    </Button>
            
-       
-    <StackLayout Margin="5, 15, 5, 5">
-        <Label x:Name="label_DeviceName"
-               Margin="0, 30, 0, 0"
-               HorizontalOptions="Center"
-               FontSize="16"
-               FontAttributes="Bold"
-               FontFamily="Arial"
-               Text="Device Name"
-               TextColor="Black"
-               >
-
-        </Label>
-
-
-        <Button x:Name="btn_DeviceName"
-                BorderWidth="2"
-                Text="My Device Name"
-                FontSize="18"
-                FontAttributes="Bold"
-                FontFamily="Arial"
-                TextColor="Black"
-                Clicked="button_DeviceName_OnClick">
-            
-        </Button>
-
-        <Label x:Name="label_AviableDevices"
-               Margin="0, 30, 0, 0"
-               HorizontalOptions="Center"
-               FontSize="16"
-               FontAttributes="Bold"
-               FontFamily="Arial"
-               Text="Aviable Devices"
-               TextColor="White"
-               >
-
-        </Label>
-
-        <Frame BorderColor="Wheat" HeightRequest="700" Margin="0, 15, 0, 5" BackgroundColor="#afafaf">
-            <Grid x:Name="DevicesGrid" Padding="2, 2, 2, 2" ColumnSpacing="0" RowSpacing="20">
-
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="auto"/>
-                </Grid.RowDefinitions>
-
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-
-                <!--
-                <BoxView Color="#FF3399" Grid.Column="0" Grid.Row="0"/>
-                <BoxView Color="#faf5f9" Grid.Column="1" Grid.Row="0"/>
-                <BoxView Color="Blue" Grid.Column="2" Grid.Row="0"/>
-                <BoxView Color="Yellow" Grid.Column="3" Grid.Row="0"/>
-                -->
-
-                <!--
-                <StackLayout Grid.Row="0"
-                             Grid.Column="0">
-
-                    <Button x:Name="btn_Device"
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    BackgroundColor="Transparent"
-                    ImageSource="icon_desktop_resized"/>
-
-                    <Label x:Name="lbl"
-                           HorizontalOptions="Center"
-                           Text="DEV_TEST">
-
-                    </Label>    
-                </StackLayout>
-
-                <StackLayout Grid.Row="0"
-                             Grid.Column="1">
-
-                    <Button x:Name="btn_Device2"
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    BackgroundColor="Transparent"
-                    ImageSource="icon_desktop_resized"/>
-
-                    <Label x:Name="lbl2"
-                           HorizontalOptions="Center"
-                           Text="DEV_TEST2">
-
-                    </Label>
-                </StackLayout>
-                -->
-
-
-            </Grid>
-        </Frame>
-
-            
-
-        <Button x:Name="btn_RefreshDevices"
-                Text="REFRESH"
-                HeightRequest="80"
-                Clicked="btn_RefreshDevices_Click">
-            
-        </Button>
-
-
-    </StackLayout>
+    
 
 </ContentPage>

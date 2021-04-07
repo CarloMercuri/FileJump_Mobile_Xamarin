@@ -565,11 +565,9 @@ C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\sta
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
-C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\icon_desktop.png
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\icon_phone.png
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\loadimage.jpg
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\trayicon.ico
-C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\icon_desktop_resized.png
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\bin\Debug\FileJump.Network.dll
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\bin\Debug\FileJump.Network.pdb
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\assets\FileJump.Network.dll
@@ -587,3 +585,6 @@ C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\lp\
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\assets\Plugin.Media.dll
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\assets\Plugin.Media.pdb
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\src\crc646957603ea1820544\MediaPickerActivity.java
+C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\icon_desktop_small.png
+C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\icon_phone_small.png
+C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\generic_file_icon.png

@@ -13,7 +13,7 @@ namespace FileJump_Mobile
         {
             InitializeComponent();
 
-            //MainPage = new MainPage();
+            MainPage = new MainPage();
 
             List<FileResult> fakePaths = new List<FileResult>();
 
@@ -21,7 +21,7 @@ namespace FileJump_Mobile
             fakePaths.Add(new FileResult("fakePath"));
             fakePaths.Add(new FileResult("fakePath"));
 
-            MainPage = new FilesProcessorPage(fakePaths);
+            //MainPage = new FilesProcessorPage(fakePaths);
 
         }
 

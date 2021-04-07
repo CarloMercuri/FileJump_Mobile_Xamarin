@@ -16,3 +16,4 @@ C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\obj\Debug\netstandard2.0\
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\obj\Debug\netstandard2.0\ref\FileJump_Mobile.dll
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\obj\Debug\netstandard2.0\FileJump_Mobile.pdb
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\obj\Debug\netstandard2.0\Pages\FilesProcessorPage.xaml.g.cs
+C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\obj\Debug\netstandard2.0\Pages\FileSendPage.xaml.g.cs

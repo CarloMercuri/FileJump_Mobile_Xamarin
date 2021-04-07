@@ -6,7 +6,7 @@
 
 
 
-    <StackLayout Margin="5, 15, 5, 5">
+    <StackLayout Margin="5, 100, 5, 5">
 
         <Label x:Name="label_AviableDevices"
                Margin="0, 30, 0, 0"
@@ -20,53 +20,30 @@
 
         </Label>
 
-        <Frame BorderColor="Wheat" HeightRequest="100" Margin="0, 30, 0, 5" BackgroundColor="#afafaf">
-            <StackLayout x:Name="DevicesStackLayout"
+        <Frame BorderColor="Wheat" HeightRequest="140" Margin="0, 30, 0, 5" BackgroundColor="#afafaf">
+
+
+            <ScrollView x:Name="DeviceScrollView" 
+                        Orientation="Horizontal"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    HeightRequest="140">
+
+                <StackLayout x:Name="DevicesStackLayout"
                          Margin="0, 0, 0, 0"
                          Padding="0, 0,0 ,0"
                 Orientation="Horizontal">
 
 
-                
-                <StackLayout >
 
-                    <Button x:Name="btn_Device"
-                    BackgroundColor="Red"
-                            VerticalOptions="Start"
-                    ImageSource="icon_desktop_resized"/>
-
-                    <Label x:Name="lbl"
-                           HorizontalOptions="Center"
-                           Text="DEV_TEST">
-
-                    </Label>    
                 </StackLayout>
+            </ScrollView>
 
-                <StackLayout >
-
-                    <Button x:Name="btn_Device2"
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    BackgroundColor="Transparent"
-                    ImageSource="icon_desktop_resized"/>
-
-                    <Label x:Name="lbl2"
-                           HorizontalOptions="Center"
-                           Text="DEV_TEST2">
-
-                    </Label>
-                </StackLayout>
-                
-
-            </StackLayout>
         </Frame>
-
-
 
         <Button x:Name="btn_RefreshDevices"
                 Text="REFRESH"
-                HeightRequest="80"
-                Clicked="btn_RefreshDevices_Click">
+                HeightRequest="80">
 
         </Button>
 

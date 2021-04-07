@@ -11902,13 +11902,13 @@ namespace FileJump_Mobile.Droid
 			public const int design_snackbar_background = 2131165291;
 			
 			// aapt resource value: 0x7F070070
-			public const int icon_desktop = 2131165296;
+			public const int icon_desktop_small = 2131165296;
 			
 			// aapt resource value: 0x7F070071
-			public const int icon_desktop_resized = 2131165297;
+			public const int icon_phone = 2131165297;
 			
 			// aapt resource value: 0x7F070072
-			public const int icon_phone = 2131165298;
+			public const int icon_phone_small = 2131165298;
 			
 			// aapt resource value: 0x7F07006C
 			public const int ic_mtrl_checked_circle = 2131165292;

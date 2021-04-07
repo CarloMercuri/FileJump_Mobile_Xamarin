@@ -7,13 +7,18 @@ using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using FileJump.Network;
 
 namespace FileJump_Mobile.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class FilesProcessorPage : ContentPage
 	{
-		public FilesProcessorPage(List<FileResult> fileResults)
+
+        private List<FileResult> SelectedFiles = new List<FileResult>();
+
+
+        public FilesProcessorPage(List<FileResult> fileResults)
 		{
             // Only need this while debugging
             NetComm.InitializeNetwork();
@@ -24,11 +29,17 @@ namespace FileJump_Mobile.Pages
 
             NetComm.ScoutNetworkDevices();
 
-		}
+            btn_RefreshDevices.Clicked += btn_RefreshDevices_Click;
+
+
+            SelectedFiles = fileResults;
+
+
+        }
 
         private void NetworkDiscoveryReceived(object sender, NetworkDiscoveryEventArgs e)
         {
-           // AddNetworkDevice(e.device);
+           AddNetworkDevice(e.device);
         }
 
         private void AddNetworkDevice(NetworkDevice device)
@@ -42,33 +53,67 @@ namespace FileJump_Mobile.Pages
             Button btn_Device = new Button()
             {
                 BackgroundColor = Color.Transparent,
-                ImageSource = "icon_desktop_resized"
+                ImageSource = GetCorrectDeviceIcon(device.Type)
+                
             };
 
-            btn_Device.Clicked += Btn_Device_Clicked;
+            btn_Device.Clicked += (sender, args) =>
+            {
+                Device_Clicked(device);
+            };
 
             Label lbl = new Label()
             {
                 HorizontalOptions = LayoutOptions.Center,
-                Text = device.Name
+                Text = device.Name,
+                WidthRequest = 80,
+                LineBreakMode = LineBreakMode.TailTruncation,
+                MaxLines = 2,
+                TextColor = Color.Black
             };
 
             stack.Children.Add(btn_Device);
             stack.Children.Add(lbl);
 
-            DevicesStackLayout.Children.Add(stack);
+            
 
+            DevicesStackLayout.Children.Add(stack);
+            //DeviceScrollView.Content = stack;
+            
 
         }
 
-        private void Btn_Device_Clicked(object sender, EventArgs args)
+        private void Device_Clicked(NetworkDevice device)
         {
-
+            Application.Current.MainPage = new FileSendPage(SelectedFiles, device.EndPoint);
         }
 
         private void btn_RefreshDevices_Click(object sender, EventArgs args)
         {
-
+            DevicesStackLayout.Children.Clear();
+            NetComm.ScoutNetworkDevices();
         }
-	}
+
+        /// <summary>
+        /// Returns the icon image associated with the specified device type
+        /// </summary>
+        /// <param name="dType"></param>
+        /// <returns></returns>
+        private string GetCorrectDeviceIcon(NetworkDeviceType dType)
+        {
+            switch (dType)
+            {
+                case NetworkDeviceType.Desktop:
+                    return "icon_desktop_small";
+
+                case NetworkDeviceType.MobilePhone:
+                    return "icon_phone_small";
+
+                default:
+                    return null;
+            }
+        }
+
+
+    }
 }
