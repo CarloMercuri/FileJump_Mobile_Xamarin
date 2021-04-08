@@ -57,13 +57,7 @@ namespace FileJump_Mobile.Pages
                 fData.FileImage = GetFileImage(fInfo);
 
                 FileDataList.Add(fData);
-                FileDataList.Add(fData);
-                FileDataList.Add(fData);
-                FileDataList.Add(fData);
-                FileDataList.Add(fData);
-                FileDataList.Add(fData);
-                FileDataList.Add(fData);
-                FileDataList.Add(fData);
+
             }
 
             FilesView.ItemsSource = FileDataList;
@@ -85,7 +79,7 @@ namespace FileJump_Mobile.Pages
         private Image GetFileImage(FileInfo file_info)
         {
 
-            // If it's an image
+            // If it's an image, create a thumbnail from it
             if(imageExtensions.Contains(file_info.Extension))
             {
                 Image img = new Image()
@@ -93,14 +87,10 @@ namespace FileJump_Mobile.Pages
                     Source = ImageSource.FromFile(file_info.FullName)
                 };
 
-                /*
-                img.WidthRequest = 70;
-                img.HeightRequest = 70;
-                img.MinimumHeightRequest = 70;
-                img.MinimumWidthRequest = 70;
-                */
                 return img;
             }
+
+            // Lastly, generate a generic file icon
 
             Image generic = new Image();
             generic.Source = "generic_file_icon";
