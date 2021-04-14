@@ -14,7 +14,7 @@
                FontSize="16"
                FontAttributes="Bold"
                FontFamily="Arial"
-               Text="Who do you want to send the file(s) to?"
+               Text=""
                TextColor="White"
                >
 

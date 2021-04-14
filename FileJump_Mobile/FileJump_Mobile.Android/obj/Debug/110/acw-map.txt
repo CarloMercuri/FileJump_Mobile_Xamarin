@@ -1,6 +1,6 @@
-FileJump_Mobile.Droid.MainActivity, FileJump_Mobile.Android;crc648e64e5c3cb14b3f9.MainActivity
-FileJump_Mobile.Droid.MainActivity;crc648e64e5c3cb14b3f9.MainActivity
-filejump_mobile.droid.MainActivity;crc648e64e5c3cb14b3f9.MainActivity
+FileJump_Mobile.Droid.MainActivity, FileJump_Mobile.Android;com.companyname.filejump_mobile.MinActivity
+FileJump_Mobile.Droid.MainActivity;com.companyname.filejump_mobile.MinActivity
+com.companyname.filejump_mobile.MinActivity;com.companyname.filejump_mobile.MinActivity
 Plugin.Media.MediaPickerActivity, Plugin.Media;crc646957603ea1820544.MediaPickerActivity
 Plugin.Media.MediaPickerActivity;crc646957603ea1820544.MediaPickerActivity
 plugin.media.MediaPickerActivity;crc646957603ea1820544.MediaPickerActivity

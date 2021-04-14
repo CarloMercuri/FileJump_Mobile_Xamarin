@@ -588,3 +588,5 @@ C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\and
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\icon_desktop_small.png
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\icon_phone_small.png
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\generic_file_icon.png
+C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\src\com\companyname\filejump_mobile\MainActivity.java
+C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\src\com\companyname\filejump_mobile\MinActivity.java

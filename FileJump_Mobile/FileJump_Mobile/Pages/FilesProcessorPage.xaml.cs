@@ -16,15 +16,24 @@ namespace FileJump_Mobile.Pages
 
         private List<FileResult> SelectedFiles = new List<FileResult>();
 
+        private int TransferType { get; set; } // 1 = file, 2 = text
+
+        private string MessageText { get; set; }
+
 
         public FilesProcessorPage(List<FileResult> fileResults)
 		{
+            InitializeComponent();
+            TransferType = 1;
+
+            label_AviableDevices.Text = "Who do you want to send the file(s) to?";
+
             // Only need this while debugging
             NetComm.InitializeNetwork();
 
             DataProcessor.NetworkDiscoveryEvent += NetworkDiscoveryReceived;
 
-            InitializeComponent();
+
 
             NetComm.ScoutNetworkDevices();
 
@@ -34,6 +43,25 @@ namespace FileJump_Mobile.Pages
             SelectedFiles = fileResults;
 
 
+        }
+
+        public FilesProcessorPage(string text)
+        {
+            InitializeComponent();
+            TransferType = 2;
+            MessageText = text;
+            label_AviableDevices.Text = "Who do you want to send it to?";
+
+            // Only need this while debugging
+            NetComm.InitializeNetwork();
+
+            DataProcessor.NetworkDiscoveryEvent += NetworkDiscoveryReceived;
+
+
+
+            NetComm.ScoutNetworkDevices();
+
+            btn_RefreshDevices.Clicked += btn_RefreshDevices_Click;
         }
 
         private void NetworkDiscoveryReceived(object sender, NetworkDiscoveryEventArgs e)
@@ -84,7 +112,17 @@ namespace FileJump_Mobile.Pages
 
         private void Device_Clicked(NetworkDevice device)
         {
-            Application.Current.MainPage = new FileSendPage(SelectedFiles, device.EndPoint);
+            if(TransferType == 1)
+            {
+                Application.Current.MainPage = new FileSendPage(SelectedFiles, device.EndPoint);
+            } 
+            else
+            {
+                DataProcessor.SendTextMessage(MessageText, device.EndPoint);
+                Application.Current.MainPage = new MainPage();
+            } 
+
+            
         }
 
         private void btn_RefreshDevices_Click(object sender, EventArgs args)

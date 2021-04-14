@@ -9,19 +9,44 @@ namespace FileJump_Mobile
 {
     public partial class App : Application
     {
-        public App()
+
+        public App(string text)
         {
             InitializeComponent();
 
+            if(text.Length > 0)
+            {
+                MainPage = new FilesProcessorPage(text);
+            }
+            else
+            {
+                MainPage = new MainPage();
+            }
+        }
+
+        public App(List<FileResult> results)
+        {
+            InitializeComponent();
+
+            if(results == null || results.Count <= 0)
+            {
+                MainPage = new MainPage();
+            }
+            else
+            {
+
+                MainPage = new FilesProcessorPage(results);
+            }
+            
+
+
+        }
+
+        public App()
+        {
+            InitializeComponent();
+            
             MainPage = new MainPage();
-
-            List<FileResult> fakePaths = new List<FileResult>();
-
-            fakePaths.Add(new FileResult("fakePath"));
-            fakePaths.Add(new FileResult("fakePath"));
-            fakePaths.Add(new FileResult("fakePath"));
-
-            //MainPage = new FilesProcessorPage(fakePaths);
 
         }
 
