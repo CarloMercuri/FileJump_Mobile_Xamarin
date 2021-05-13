@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -13,6 +12,7 @@ using Android.Database;
 using Android.Graphics;
 using System.Collections;
 
+
 namespace FileJump_Mobile.Droid
 {
     [Activity(Label = "FileJump_Mobile", Icon = "@mipmap/icon", Name = "com.companyname.filejump_mobile.MinActivity", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
@@ -21,7 +21,7 @@ namespace FileJump_Mobile.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            //FileJump.Network.Data
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

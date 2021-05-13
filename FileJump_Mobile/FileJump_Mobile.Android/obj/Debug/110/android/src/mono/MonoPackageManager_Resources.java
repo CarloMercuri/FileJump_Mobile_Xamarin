@@ -3,7 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "FileJump_Mobile.Android.dll" comes first in this list. */
 		"FileJump_Mobile.Android.dll",
-		"FileJump.Network.dll",
+		"FileJump_Network.dll",
 		"FileJump_Mobile.dll",
 		"FormsViewGroup.dll",
 		"Plugin.Media.dll",

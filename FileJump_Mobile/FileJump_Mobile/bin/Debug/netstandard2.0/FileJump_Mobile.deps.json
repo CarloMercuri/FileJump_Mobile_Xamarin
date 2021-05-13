@@ -10,6 +10,7 @@
       "FileJump_Mobile/1.0.0": {
         "dependencies": {
           "FileJump.Network": "1.0.0",
+          "FileJump_Network": "1.0.0",
           "NETStandard.Library": "2.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
@@ -71,9 +72,9 @@
           }
         }
       },
-      "FileJump.Network/1.0.0": {
+      "FileJump_Network/1.0.0": {
         "runtime": {
-          "FileJump.Network.dll": {}
+          "FileJump_Network.dll": {}
         }
       }
     }
@@ -126,7 +127,7 @@
       "path": "xamarin.forms/5.0.0.2012",
       "hashPath": "xamarin.forms.5.0.0.2012.nupkg.sha512"
     },
-    "FileJump.Network/1.0.0": {
+    "FileJump_Network/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

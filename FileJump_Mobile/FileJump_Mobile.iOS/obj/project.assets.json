@@ -180,6 +180,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "FileJump.Network": "1.0.0",
+          "FileJump_Network": "1.0.0",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
@@ -189,6 +190,15 @@
         },
         "runtime": {
           "bin/placeholder/FileJump_Mobile.dll": {}
+        }
+      },
+      "FileJump_Network/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/FileJump_Network.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileJump_Network.dll": {}
         }
       }
     },
@@ -371,6 +381,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "FileJump.Network": "1.0.0",
+          "FileJump_Network": "1.0.0",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
@@ -380,6 +391,15 @@
         },
         "runtime": {
           "bin/placeholder/FileJump_Mobile.dll": {}
+        }
+      },
+      "FileJump_Network/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/FileJump_Network.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileJump_Network.dll": {}
         }
       }
     },
@@ -562,6 +582,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "FileJump.Network": "1.0.0",
+          "FileJump_Network": "1.0.0",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
@@ -571,6 +592,15 @@
         },
         "runtime": {
           "bin/placeholder/FileJump_Mobile.dll": {}
+        }
+      },
+      "FileJump_Network/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/FileJump_Network.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileJump_Network.dll": {}
         }
       }
     },
@@ -753,6 +783,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "FileJump.Network": "1.0.0",
+          "FileJump_Network": "1.0.0",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
@@ -762,6 +793,15 @@
         },
         "runtime": {
           "bin/placeholder/FileJump_Mobile.dll": {}
+        }
+      },
+      "FileJump_Network/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/FileJump_Network.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileJump_Network.dll": {}
         }
       }
     }
@@ -1130,6 +1170,11 @@
       "type": "project",
       "path": "../FileJump_Mobile/FileJump_Mobile.csproj",
       "msbuildProject": "../FileJump_Mobile/FileJump_Mobile.csproj"
+    },
+    "FileJump_Network/1.0.0": {
+      "type": "project",
+      "path": "../../../FileJump_Network/FileJump_Network/FileJump_Network.csproj",
+      "msbuildProject": "../../../FileJump_Network/FileJump_Network/FileJump_Network.csproj"
     }
   },
   "projectFileDependencyGroups": {

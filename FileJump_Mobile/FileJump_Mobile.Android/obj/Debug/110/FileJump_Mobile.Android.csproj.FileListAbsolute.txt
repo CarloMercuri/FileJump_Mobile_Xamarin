@@ -445,7 +445,6 @@ C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\and
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\src\crc64720bb2db43a66fe9\SwitchRenderer.java
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\src\crc64720bb2db43a66fe9\TabbedPageRenderer.java
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\src\crc64720bb2db43a66fe9\ViewRenderer_2.java
-C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\src\crc648e64e5c3cb14b3f9\MainActivity.java
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\src\crc64a0e0a82d0db9a07d\AccelerometerListener.java
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\src\crc64a0e0a82d0db9a07d\ActivityLifecycleContextListener.java
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\src\crc64a0e0a82d0db9a07d\BarometerListener.java
@@ -568,11 +567,6 @@ C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\sta
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\icon_phone.png
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\loadimage.jpg
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\trayicon.ico
-C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\bin\Debug\FileJump.Network.dll
-C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\bin\Debug\FileJump.Network.pdb
-C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\assets\FileJump.Network.dll
-C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\assets\FileJump.Network.dll.mdb
-C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\bin\Debug\FileJump.Network.dll.mdb
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\lp\46\jl\files.cache
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\lp\52\jl\files.cache
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\lp\56\jl\files.cache
@@ -588,5 +582,9 @@ C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\and
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\icon_desktop_small.png
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\icon_phone_small.png
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\res\drawable\generic_file_icon.png
-C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\src\com\companyname\filejump_mobile\MainActivity.java
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\src\com\companyname\filejump_mobile\MinActivity.java
+C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\bin\Debug\FileJump_Network.dll
+C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\bin\Debug\FileJump_Network.pdb
+C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\assets\FileJump_Network.dll
+C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\obj\Debug\110\android\assets\FileJump_Network.dll.mdb
+C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile.Android\bin\Debug\FileJump_Network.dll.mdb

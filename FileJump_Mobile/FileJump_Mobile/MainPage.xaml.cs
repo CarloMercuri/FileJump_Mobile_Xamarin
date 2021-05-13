@@ -22,6 +22,8 @@ namespace FileJump_Mobile
             // Initialize the network listener
             NetComm.InitializeNetwork();
 
+            ProgramSettings.DeviceName = "CARLO_MOBILE";
+
             PickPhotosButton.Clicked += btn_PickPhoto_Clicked;
         }
 

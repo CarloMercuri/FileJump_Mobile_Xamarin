@@ -62,6 +62,22 @@ namespace FileJump_Mobile.Pages
 
             FilesView.ItemsSource = FileDataList;
 
+            DataProcessor.OutboundTransferFinished += OutBoundTransferFinished;
+
+        }
+
+        private void OutBoundTransferFinished(object sender, OutTransferEventArgs args)
+        {
+            for (int i = 0; i < FileDataList.Count; i++)
+            {
+                if(FileDataList[i].FileStructure.FilePath == args.FilePath)
+                {
+                    FileDataList[i].FileImage = new Image()
+                    {
+                        Source = ImageSource.FromFile("icon_desktop_small")
+                    };
+                }
+            }
         }
 
         private void SendButtonClicked(object sender, EventArgs args)

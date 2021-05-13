@@ -28,9 +28,6 @@ namespace FileJump_Mobile.Pages
 
             label_AviableDevices.Text = "Who do you want to send the file(s) to?";
 
-            // Only need this while debugging
-            NetComm.InitializeNetwork();
-
             DataProcessor.NetworkDiscoveryEvent += NetworkDiscoveryReceived;
 
 
@@ -51,9 +48,6 @@ namespace FileJump_Mobile.Pages
             TransferType = 2;
             MessageText = text;
             label_AviableDevices.Text = "Who do you want to send it to?";
-
-            // Only need this while debugging
-            NetComm.InitializeNetwork();
 
             DataProcessor.NetworkDiscoveryEvent += NetworkDiscoveryReceived;
 

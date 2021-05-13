@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\FileJump\FileJump_Network\FileJump.Network.csproj" />
+    <ProjectReference Include="..\..\..\FileJump_Network\FileJump_Network\FileJump_Network.csproj" />
   </ItemGroup>
 
   <ItemGroup>

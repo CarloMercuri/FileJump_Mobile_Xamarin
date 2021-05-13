@@ -84,6 +84,15 @@
         "runtime": {
           "bin/placeholder/FileJump.Network.dll": {}
         }
+      },
+      "FileJump_Network/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/FileJump_Network.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileJump_Network.dll": {}
+        }
       }
     }
   },
@@ -590,11 +599,17 @@
       "type": "project",
       "path": "../../../FileJump/FileJump_Network/FileJump.Network.csproj",
       "msbuildProject": "../../../FileJump/FileJump_Network/FileJump.Network.csproj"
+    },
+    "FileJump_Network/1.0.0": {
+      "type": "project",
+      "path": "../../../FileJump_Network/FileJump_Network/FileJump_Network.csproj",
+      "msbuildProject": "../../../FileJump_Network/FileJump_Network/FileJump_Network.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "FileJump.Network >= 1.0.0",
+      "FileJump_Network >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.Essentials >= 1.6.1",
@@ -635,6 +650,9 @@
           "projectReferences": {
             "C:\\dev\\FileJump\\FileJump_Network\\FileJump.Network.csproj": {
               "projectPath": "C:\\dev\\FileJump\\FileJump_Network\\FileJump.Network.csproj"
+            },
+            "C:\\dev\\FileJump_Network\\FileJump_Network\\FileJump_Network.csproj": {
+              "projectPath": "C:\\dev\\FileJump_Network\\FileJump_Network\\FileJump_Network.csproj"
             }
           }
         }

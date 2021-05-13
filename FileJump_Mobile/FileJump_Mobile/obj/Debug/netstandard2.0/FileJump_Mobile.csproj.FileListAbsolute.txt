@@ -2,8 +2,6 @@ C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\bin\Debug\netstandard2.0\
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\bin\Debug\netstandard2.0\FileJump_Mobile.dll
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\bin\Debug\netstandard2.0\ref\FileJump_Mobile.dll
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\bin\Debug\netstandard2.0\FileJump_Mobile.pdb
-C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\bin\Debug\netstandard2.0\FileJump.Network.dll
-C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\bin\Debug\netstandard2.0\FileJump.Network.pdb
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\obj\Debug\netstandard2.0\FileJump_Mobile.csprojAssemblyReference.cache
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
@@ -17,3 +15,5 @@ C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\obj\Debug\netstandard2.0\
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\obj\Debug\netstandard2.0\FileJump_Mobile.pdb
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\obj\Debug\netstandard2.0\Pages\FilesProcessorPage.xaml.g.cs
 C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\obj\Debug\netstandard2.0\Pages\FileSendPage.xaml.g.cs
+C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\bin\Debug\netstandard2.0\FileJump_Network.dll
+C:\dev\FileJump_Mobile\FileJump_Mobile\FileJump_Mobile\bin\Debug\netstandard2.0\FileJump_Network.pdb
